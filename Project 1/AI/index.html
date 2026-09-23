@@ -1,0 +1,569 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio of Jordan Lee, a junior frontend web developer specializing in responsive, accessible websites built with HTML5, CSS3, and JavaScript."
+    />
+    <title>Jordan Lee — Frontend Web Developer</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta property="og:image" content="https://bolt.new/static/og_default.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://bolt.new/static/og_default.png">
+</head>
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <!-- ========================= NAVIGATION ========================= -->
+    <header class="site-header" id="top">
+      <nav class="navbar" aria-label="Primary navigation">
+        <a href="#top" class="nav-logo" aria-label="Jordan Lee — home">
+          <span class="nav-logo__mark" aria-hidden="true">JL</span>
+          <span class="nav-logo__text">Jordan Lee</span>
+        </a>
+
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true" />
+        <label for="nav-toggle" class="nav-toggle__label" aria-label="Toggle navigation menu">
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+        </label>
+
+        <label for="nav-toggle" class="nav-backdrop" aria-hidden="true"></label>
+
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#contact" class="nav-link nav-link--cta">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main">
+      <!-- ========================= HERO ========================= -->
+      <section class="hero" aria-labelledby="hero-heading">
+        <div class="hero__decor hero__decor--1" aria-hidden="true"></div>
+        <div class="hero__decor hero__decor--2" aria-hidden="true"></div>
+        <div class="container hero__inner">
+          <div class="hero__content">
+            <p class="hero__greeting">Hello, I'm</p>
+            <h1 id="hero-heading" class="hero__name">Jordan Lee</h1>
+            <p class="hero__title">
+              <span class="hero__title-accent">Frontend</span> Web Developer
+            </p>
+            <p class="hero__intro">
+              I craft clean, responsive, and accessible websites that feel
+              fast and intuitive on every device. With a foundation in
+              HTML5, CSS3, and JavaScript, I turn designs into polished,
+              user-friendly experiences.
+            </p>
+            <div class="hero__actions">
+              <a href="#projects" class="btn btn--primary">
+                View Projects
+                <span class="btn__arrow" aria-hidden="true">&rarr;</span>
+              </a>
+              <a href="#contact" class="btn btn--secondary">Contact Me</a>
+            </div>
+          </div>
+
+          <div class="hero__avatar" aria-hidden="true">
+            <div class="hero__avatar-ring"></div>
+            <div class="hero__avatar-circle">
+              <span class="hero__avatar-initials">JL</span>
+            </div>
+            <div class="hero__chip hero__chip--html">&lt;/&gt;</div>
+            <div class="hero__chip hero__chip--css">CSS</div>
+            <div class="hero__chip hero__chip--js">JS</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================= ABOUT ========================= -->
+      <section class="section about" id="about" aria-labelledby="about-heading">
+        <div class="container">
+          <header class="section__header">
+            <p class="section__eyebrow">Get to know me</p>
+            <h2 id="about-heading" class="section__title">About Me</h2>
+            <div class="section__rule" aria-hidden="true"></div>
+          </header>
+
+          <div class="about__grid">
+            <div class="about__card">
+              <div class="about__photo" aria-hidden="true">
+                <span class="about__photo-initials">JL</span>
+                <div class="about__photo-badge">Available for work</div>
+              </div>
+              <dl class="about__facts">
+                <div class="about__fact">
+                  <dt>Name</dt>
+                  <dd>Jordan Lee</dd>
+                </div>
+                <div class="about__fact">
+                  <dt>Location</dt>
+                  <dd>Seattle, WA</dd>
+                </div>
+                <div class="about__fact">
+                  <dt>Experience</dt>
+                  <dd>2 years</dd>
+                </div>
+                <div class="about__fact">
+                  <dt>Focus</dt>
+                  <dd>Frontend</dd>
+                </div>
+              </dl>
+            </div>
+
+            <div class="about__text">
+              <p>
+                I'm a junior frontend developer based in Seattle with a
+                passion for building websites that are not only visually
+                appealing but also accessible and performant. My toolkit
+                centers on semantic HTML5, modern CSS3, and vanilla
+                JavaScript.
+              </p>
+              <p>
+                My journey started with a freeCodeCamp Responsive Web
+                Design course, and I've been hooked ever since. I've
+                completed freelance landing pages for local businesses,
+                contributed small CSS fixes to open-source projects, and
+                continuously sharpen my skills through build-in-public
+                challenges.
+              </p>
+              <p>
+                I care deeply about writing clean, maintainable code and
+                designing experiences that work for everyone — including
+                keyboard and screen-reader users. When I'm not coding,
+                I'm exploring new coffee shops, reading about web
+                performance, and mentoring fellow bootcamp grads.
+              </p>
+
+              <a href="#contact" class="btn btn--primary btn--small">Let's Work Together</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================= SKILLS ========================= -->
+      <section class="section skills" id="skills" aria-labelledby="skills-heading">
+        <div class="container">
+          <header class="section__header">
+            <p class="section__eyebrow">What I work with</p>
+            <h2 id="skills-heading" class="section__title">Skills</h2>
+            <div class="section__rule" aria-hidden="true"></div>
+          </header>
+
+          <div class="skills__grid">
+            <article class="skill-card">
+              <div class="skill-card__icon" aria-hidden="true">
+                <span>&lt;/&gt;</span>
+              </div>
+              <h3 class="skill-card__title">HTML5</h3>
+              <p class="skill-card__desc">
+                Semantic markup, accessible forms, proper landmark
+                structure, and SEO-friendly document outlines.
+              </p>
+              <ul class="skill-tags">
+                <li class="skill-tag">Semantic Elements</li>
+                <li class="skill-tag">ARIA</li>
+                <li class="skill-tag">Forms</li>
+                <li class="skill-tag">SEO</li>
+              </ul>
+              <div class="skill-bar" aria-hidden="true">
+                <div class="skill-bar__fill skill-bar__fill--90"></div>
+              </div>
+            </article>
+
+            <article class="skill-card">
+              <div class="skill-card__icon skill-card__icon--css" aria-hidden="true">
+                <span>CSS</span>
+              </div>
+              <h3 class="skill-card__title">CSS3</h3>
+              <p class="skill-card__desc">
+                Flexbox, Grid, custom properties, animations,
+                gradients, and fully responsive mobile-first layouts.
+              </p>
+              <ul class="skill-tags">
+                <li class="skill-tag">Flexbox</li>
+                <li class="skill-tag">Grid</li>
+                <li class="skill-tag">Animations</li>
+                <li class="skill-tag">Responsive</li>
+              </ul>
+              <div class="skill-bar" aria-hidden="true">
+                <div class="skill-bar__fill skill-bar__fill--85"></div>
+              </div>
+            </article>
+
+            <article class="skill-card">
+              <div class="skill-card__icon skill-card__icon--js" aria-hidden="true">
+                <span>JS</span>
+              </div>
+              <h3 class="skill-card__title">JavaScript</h3>
+              <p class="skill-card__desc">
+                DOM manipulation, event handling, fetch API, ES6+
+                syntax, and building interactive UI components.
+              </p>
+              <ul class="skill-tags">
+                <li class="skill-tag">ES6+</li>
+                <li class="skill-tag">DOM</li>
+                <li class="skill-tag">Fetch API</li>
+                <li class="skill-tag">JSON</li>
+              </ul>
+              <div class="skill-bar" aria-hidden="true">
+                <div class="skill-bar__fill skill-bar__fill--75"></div>
+              </div>
+            </article>
+
+            <article class="skill-card">
+              <div class="skill-card__icon skill-card__icon--git" aria-hidden="true">
+                <span>Git</span>
+              </div>
+              <h3 class="skill-card__title">Git &amp; GitHub</h3>
+              <p class="skill-card__desc">
+                Version control workflows, branching, pull requests,
+                code review, and GitHub Pages deployment.
+              </p>
+              <ul class="skill-tags">
+                <li class="skill-tag">Branching</li>
+                <li class="skill-tag">Pull Requests</li>
+                <li class="skill-tag">Code Review</li>
+                <li class="skill-tag">GitHub Pages</li>
+              </ul>
+              <div class="skill-bar" aria-hidden="true">
+                <div class="skill-bar__fill skill-bar__fill--80"></div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================= PROJECTS ========================= -->
+      <section class="section projects" id="projects" aria-labelledby="projects-heading">
+        <div class="container">
+          <header class="section__header">
+            <p class="section__eyebrow">Things I've built</p>
+            <h2 id="projects-heading" class="section__title">Featured Projects</h2>
+            <div class="section__rule" aria-hidden="true"></div>
+          </header>
+
+          <div class="projects__grid">
+            <article class="project-card">
+              <div class="project-card__thumb project-card__thumb--a" aria-hidden="true">
+                <span class="project-card__icon">&#128218;</span>
+                <div class="project-card__overlay">
+                  <span>View Project</span>
+                </div>
+              </div>
+              <div class="project-card__body">
+                <h3 class="project-card__title">StudySync Landing Page</h3>
+                <p class="project-card__desc">
+                  A responsive landing page for a student productivity app
+                  featuring a hero, feature grid, testimonials, and a
+                  pricing table — built entirely with HTML and CSS.
+                </p>
+                <ul class="project-card__tags">
+                  <li>HTML5</li>
+                  <li>CSS Grid</li>
+                  <li>Responsive</li>
+                </ul>
+                <div class="project-card__links">
+                  <a href="#" class="project-card__link">Live Demo &rarr;</a>
+                  <a href="#" class="project-card__link">Source &rarr;</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-card__thumb project-card__thumb--b" aria-hidden="true">
+                <span class="project-card__icon">&#9749;</span>
+                <div class="project-card__overlay">
+                  <span>View Project</span>
+                </div>
+              </div>
+              <div class="project-card__body">
+                <h3 class="project-card__title">Brew &amp; Bite Café Menu</h3>
+                <p class="project-card__desc">
+                  A digital café menu with categorized sections, animated
+                  hover states on menu items, and a print-friendly
+                  stylesheet for in-store QR code scanning.
+                </p>
+                <ul class="project-card__tags">
+                  <li>Flexbox</li>
+                  <li>Animations</li>
+                  <li>Print CSS</li>
+                </ul>
+                <div class="project-card__links">
+                  <a href="#" class="project-card__link">Live Demo &rarr;</a>
+                  <a href="#" class="project-card__link">Source &rarr;</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-card__thumb project-card__thumb--c" aria-hidden="true">
+                <span class="project-card__icon">&#127908;</span>
+                <div class="project-card__overlay">
+                  <span>View Project</span>
+                </div>
+              </div>
+              <div class="project-card__body">
+                <h3 class="project-card__title">Shutter Studio Portfolio</h3>
+                <p class="project-card__desc">
+                  A minimalist portfolio for a freelance photographer with
+                  a CSS Grid gallery, hover-zoom thumbnails, and a
+                  contact form with client-side validation.
+                </p>
+                <ul class="project-card__tags">
+                  <li>CSS Grid</li>
+                  <li>JavaScript</li>
+                  <li>Forms</li>
+                </ul>
+                <div class="project-card__links">
+                  <a href="#" class="project-card__link">Live Demo &rarr;</a>
+                  <a href="#" class="project-card__link">Source &rarr;</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-card__thumb project-card__thumb--d" aria-hidden="true">
+                <span class="project-card__icon">&#128062;</span>
+                <div class="project-card__overlay">
+                  <span>View Project</span>
+                </div>
+              </div>
+              <div class="project-card__body">
+                <h3 class="project-card__title">Pawsitive Shelter Donation Page</h3>
+                <p class="project-card__desc">
+                  A donation landing page for a local animal shelter with
+                  impact statistics, tiered giving cards, and an
+                  accessible multi-step form using JavaScript validation.
+                </p>
+                <ul class="project-card__tags">
+                  <li>Accessibility</li>
+                  <li>JavaScript</li>
+                  <li>Semantic HTML</li>
+                </ul>
+                <div class="project-card__links">
+                  <a href="#" class="project-card__link">Live Demo &rarr;</a>
+                  <a href="#" class="project-card__link">Source &rarr;</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================= EDUCATION ========================= -->
+      <section class="section education" id="education" aria-labelledby="education-heading">
+        <div class="container">
+          <header class="section__header">
+            <p class="section__eyebrow">My background</p>
+            <h2 id="education-heading" class="section__title">Education &amp; Certifications</h2>
+            <div class="section__rule" aria-hidden="true"></div>
+          </header>
+
+          <div class="education__timeline">
+            <article class="timeline-item">
+              <div class="timeline-item__marker" aria-hidden="true">
+                <span class="timeline-item__dot"></span>
+              </div>
+              <div class="timeline-item__content">
+                <p class="timeline-item__date">2025 — Present</p>
+                <h3 class="timeline-item__title">B.S. in Software Development</h3>
+                <p class="timeline-item__org">Western Governors University</p>
+                <p class="timeline-item__desc">
+                  Coursework covers web programming, user interface design,
+                  data structures, and software engineering practices.
+                  Currently maintaining a 3.8 GPA.
+                </p>
+              </div>
+            </article>
+
+            <article class="timeline-item">
+              <div class="timeline-item__marker" aria-hidden="true">
+                <span class="timeline-item__dot"></span>
+              </div>
+              
+              <div class="timeline-item__content">
+                <p class="timeline-item__date">2024</p>
+                <h3 class="timeline-item__title">Meta Frontend Developer Certificate</h3>
+                <p class="timeline-item__org">Coursera</p>
+                <p class="timeline-item__desc">
+                  A nine-course program covering HTML, CSS, JavaScript,
+                  React fundamentals, UX design principles, and version
+                  control with Git and GitHub.
+                </p>
+              </div>
+            </article>
+
+            <article class="timeline-item">
+              <div class="timeline-item__marker" aria-hidden="true">
+                <span class="timeline-item__dot"></span>
+              </div>
+              <div class="timeline-item__content">
+                <p class="timeline-item__date">2023</p>
+                <h3 class="timeline-item__title">Responsive Web Design Certification</h3>
+                <p class="timeline-item__org">freeCodeCamp</p>
+                <p class="timeline-item__desc">
+                  Completed five hands-on projects covering Flexbox, CSS
+                  Grid, accessibility best practices, and mobile-first
+                  responsive design techniques.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================= CONTACT ========================= -->
+      <section class="section contact" id="contact" aria-labelledby="contact-heading">
+        <div class="container">
+          <header class="section__header">
+            <p class="section__eyebrow">Let's work together</p>
+            <h2 id="contact-heading" class="section__title">Get In Touch</h2>
+            <div class="section__rule" aria-hidden="true"></div>
+          </header>
+
+          <div class="contact__grid">
+            <div class="contact__info">
+              <p class="contact__lead">
+                Have a project in mind or just want to say hello? I'm
+                currently open to freelance work and full-time junior
+                frontend roles. Fill out the form and I'll get back to
+                you within 48 hours.
+              </p>
+
+              <ul class="contact__details">
+                <li class="contact__detail">
+                  <span class="contact__detail-icon" aria-hidden="true">&#9993;</span>
+                  <span class="contact__detail-text">
+                    <span class="contact__detail-label">Email</span>
+                    <a href="mailto:jordan.lee.dev@gmail.com" class="contact__detail-value">jordan.lee.dev@gmail.com</a>
+                  </span>
+                </li>
+                <li class="contact__detail">
+                  <span class="contact__detail-icon" aria-hidden="true">&#128205;</span>
+                  <span class="contact__detail-text">
+                    <span class="contact__detail-label">Location</span>
+                    <span class="contact__detail-value">Seattle, WA</span>
+                  </span>
+                </li>
+                <li class="contact__detail">
+                  <span class="contact__detail-icon" aria-hidden="true">&#128187;</span>
+                  <span class="contact__detail-text">
+                    <span class="contact__detail-label">GitHub</span>
+                    <a href="#" class="contact__detail-value">github.com/jordanlee</a>
+                  </span>
+                </li>
+                <li class="contact__detail">
+                  <span class="contact__detail-icon" aria-hidden="true">&#128188;</span>
+                  <span class="contact__detail-text">
+                    <span class="contact__detail-label">LinkedIn</span>
+                    <a href="#" class="contact__detail-value">linkedin.com/in/jordanlee</a>
+                  </span>
+                </li>
+              </ul>
+            </div>
+
+            <form
+              class="contact__form"
+              action="mailto:jordan.lee.dev@gmail.com"
+              method="post"
+              enctype="text/plain"
+              aria-label="Contact form"
+            >
+              <div class="form-row">
+                <label for="name" class="form-label">Name <span class="form-req" aria-hidden="true">*</span></label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  class="form-input"
+                  placeholder="Your full name"
+                  autocomplete="name"
+                  required
+                />
+              </div>
+              <div class="form-row">
+                <label for="email" class="form-label">Email <span class="form-req" aria-hidden="true">*</span></label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="form-input"
+                  placeholder="you@example.com"
+                  autocomplete="email"
+                  required
+                />
+              </div>
+              <div class="form-row">
+                <label for="subject" class="form-label">Subject</label>
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  class="form-input"
+                  placeholder="What's this about?"
+                />
+              </div>
+              <div class="form-row">
+                <label for="message" class="form-label">Message <span class="form-req" aria-hidden="true">*</span></label>
+                <textarea
+                  id="message"
+                  name="message"
+                  class="form-input form-textarea"
+                  rows="5"
+                  placeholder="Tell me about your project, timeline, and budget..."
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn--primary btn--full">
+                Send Message
+                <span class="btn__arrow" aria-hidden="true">&rarr;</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ========================= FOOTER ========================= -->
+    <footer class="site-footer">
+      <div class="container site-footer__inner">
+        <div class="site-footer__brand">
+          <span class="site-footer__mark" aria-hidden="true">JL</span>
+          <p class="site-footer__name">Jordan Lee</p>
+          <p class="site-footer__tagline">Frontend Web Developer</p>
+        </div>
+
+        <nav class="site-footer__nav" aria-label="Footer navigation">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#education">Education</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="site-footer__social">
+          <a href="#" class="site-footer__social-link" aria-label="GitHub profile">GitHub</a>
+          <a href="#" class="site-footer__social-link" aria-label="LinkedIn profile">LinkedIn</a>
+          <a href="mailto:jordan.lee.dev@gmail.com" class="site-footer__social-link" aria-label="Send email">Email</a>
+        </div>
+      </div>
+      <div class="site-footer__bottom">
+        <p>&copy; 2026 Jordan Lee. All rights reserved. Built with HTML5 &amp; CSS3.</p>
+        <a href="#top" class="site-footer__back-top">Back to top &uarr;</a>
+      </div>
+    </footer>
+  </body>
+</html>
